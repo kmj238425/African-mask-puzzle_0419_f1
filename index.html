@@ -175,12 +175,13 @@ html,body{width:100%;height:100%;overflow:hidden;background:#e0d0b5;position:fix
 }
 .mask-img-wrap{
   flex:0 0 auto;
-  display:flex;align-items:flex-start;justify-content:center;
-  padding-top:clamp(4px,1vh,10px);
+  display:flex;align-items:stretch;justify-content:center;
 }
 .mask-img-wrap img{
-  width:clamp(100px,24vw,160px);height:auto;object-fit:contain;
-  max-height:72vh;
+  width:clamp(100px,24vw,160px);
+  height:100%;
+  object-fit:contain;
+  object-position:top center;
   mix-blend-mode:multiply;
 }
 .mask-text{
